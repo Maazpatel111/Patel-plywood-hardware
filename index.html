@@ -3,376 +3,387 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Patel Plywood & Hardware</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Patel Plywood & Hardware — Premium Interior Materials</title>
+  <meta name="description" content="Patel Plywood and Hardware — Your premium destination for plywood, laminate, veneer, louvers and hardware in one showroom." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header id="navbar">
-    <div class="container nav-container">
-      <div class="logo">
-        <span class="logo-icon"><i class="fas fa-hammer"></i></span>
-        <span>Patel <strong>Plywood</strong></span>
-      </div>
-      <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
+  <!-- ── NAVIGATION ── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        Patel Plywood
+        <span>& Hardware</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold nav-cta">Visit Showroom</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
+  </nav>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Quality Plywood &amp; Hardware</h1>
-      <p>Your trusted supplier for premium plywood, laminates, and hardware in one stop.</p>
-      <div class="hero-btns">
-        <a href="#products" class="btn btn-primary">Our Products</a>
-        <a href="#contact" class="btn btn-outline">Contact Us</a>
-      </div>
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bg.jpg" alt="Patel Plywood and Hardware Showroom" />
     </div>
-  </section>
-
-  <!-- Stats -->
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat-card">
-        <i class="fas fa-store"></i>
-        <h3 class="counter" data-target="25">0</h3><span>+</span>
-        <p>Years of Experience</p>
-      </div>
-      <div class="stat-card">
-        <i class="fas fa-boxes"></i>
-        <h3 class="counter" data-target="500">0</h3><span>+</span>
-        <p>Products Available</p>
-      </div>
-      <div class="stat-card">
-        <i class="fas fa-users"></i>
-        <h3 class="counter" data-target="3000">0</h3><span>+</span>
-        <p>Happy Customers</p>
-      </div>
-      <div class="stat-card">
-        <i class="fas fa-truck"></i>
-        <h3 class="counter" data-target="15">0</h3><span>+</span>
-        <p>Cities Served</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about section">
-    <div class="container about-grid">
-      <div class="about-img">
-        <div class="img-placeholder">
-          <i class="fas fa-building"></i>
-          <p>Patel Plywood Showroom</p>
-        </div>
-      </div>
-      <div class="about-text">
-        <span class="section-label">About Us</span>
-        <h2>Building Trust Since <span class="highlight">1999</span></h2>
-        <p>Patel Plywood &amp; Hardware is a family-owned showroom dedicated to providing the finest quality plywood, laminates, veneers, and hardware accessories. We believe every project deserves the best material.</p>
-        <p>From interior designers to contractors and home builders, we serve all with competitive pricing and expert guidance.</p>
-        <ul class="about-features">
-          <li><i class="fas fa-check-circle"></i> ISI-marked &amp; branded products only</li>
-          <li><i class="fas fa-check-circle"></i> Bulk and retail both available</li>
-          <li><i class="fas fa-check-circle"></i> Free home delivery on orders above ₹5,000</li>
-          <li><i class="fas fa-check-circle"></i> Expert advice &amp; after-sales support</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products -->
-  <section id="products" class="products section bg-light">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">What We Offer</span>
-        <h2>Our <span class="highlight">Products</span></h2>
-        <p>We stock a wide range of premium building and interior materials.</p>
-      </div>
-
-      <div class="filter-btns">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="plywood">Plywood</button>
-        <button class="filter-btn" data-filter="laminate">Laminates</button>
-        <button class="filter-btn" data-filter="hardware">Hardware</button>
-        <button class="filter-btn" data-filter="doors">Doors</button>
-      </div>
-
-      <div class="products-grid" id="productsGrid">
-        <div class="product-card" data-category="plywood">
-          <div class="product-icon"><i class="fas fa-layer-group"></i></div>
-          <h3>Commercial Plywood</h3>
-          <p>MR &amp; BWR grade commercial plywood for furniture and construction use.</p>
-          <span class="product-tag">Plywood</span>
-        </div>
-        <div class="product-card" data-category="plywood">
-          <div class="product-icon"><i class="fas fa-grip-lines"></i></div>
-          <h3>Marine Plywood</h3>
-          <p>Water-resistant marine-grade plywood ideal for kitchens and bathrooms.</p>
-          <span class="product-tag">Plywood</span>
-        </div>
-        <div class="product-card" data-category="laminate">
-          <div class="product-icon"><i class="fas fa-palette"></i></div>
-          <h3>Decorative Laminates</h3>
-          <p>Available in 500+ shades and textures for elegant interiors.</p>
-          <span class="product-tag">Laminates</span>
-        </div>
-        <div class="product-card" data-category="laminate">
-          <div class="product-icon"><i class="fas fa-tree"></i></div>
-          <h3>Wood Veneers</h3>
-          <p>Natural and engineered wood veneers for premium finish.</p>
-          <span class="product-tag">Laminates</span>
-        </div>
-        <div class="product-card" data-category="hardware">
-          <div class="product-icon"><i class="fas fa-tools"></i></div>
-          <h3>Cabinet Hardware</h3>
-          <p>Hinges, handles, drawer channels, and all cabinet fittings.</p>
-          <span class="product-tag">Hardware</span>
-        </div>
-        <div class="product-card" data-category="hardware">
-          <div class="product-icon"><i class="fas fa-lock"></i></div>
-          <h3>Locks &amp; Latches</h3>
-          <p>Mortise locks, padlocks, and security latches from top brands.</p>
-          <span class="product-tag">Hardware</span>
-        </div>
-        <div class="product-card" data-category="doors">
-          <div class="product-icon"><i class="fas fa-door-open"></i></div>
-          <h3>Flush Doors</h3>
-          <p>Solid core and hollow core flush doors for all applications.</p>
-          <span class="product-tag">Doors</span>
-        </div>
-        <div class="product-card" data-category="doors">
-          <div class="product-icon"><i class="fas fa-border-all"></i></div>
-          <h3>PVC Doors &amp; Frames</h3>
-          <p>Termite-proof PVC door frames and panels for long-lasting use.</p>
-          <span class="product-tag">Doors</span>
+      <div class="hero-body">
+        <div class="label">Premium Showroom · Est. 2024</div>
+        <h1 class="h1 hero-title">
+          Where Quality<br />
+          <em>Meets Craftsmanship</em>
+        </h1>
+        <p class="hero-desc">
+          Plywood · Laminate · Veneer · Louvers · Hardware · Kitchen —
+          everything you need to build something beautiful, under one roof.
+        </p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-gold">Explore Products <i class="fas fa-arrow-right"></i></a>
+          <a href="contact.html" class="btn btn-outline">Visit Showroom</a>
         </div>
       </div>
     </div>
+    <div class="hero-scroll">Scroll</div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="services section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">What We Do</span>
-        <h2>Our <span class="highlight">Services</span></h2>
-        <p>Beyond selling products, we provide end-to-end support for your project needs.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <i class="fas fa-ruler-combined"></i>
-          <h3>Custom Cutting</h3>
-          <p>Precision cutting of plywood and boards to your exact specifications.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-truck"></i>
-          <h3>Home Delivery</h3>
-          <p>Fast and safe delivery to your doorstep within the city and surrounding areas.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-hard-hat"></i>
-          <h3>Expert Consultation</h3>
-          <p>Free consultation for material selection based on your budget and requirements.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-tags"></i>
-          <h3>Bulk Discounts</h3>
-          <p>Special pricing for contractors, builders, and bulk purchasers.</p>
-        </div>
-      </div>
+  <!-- ── TICKER ── -->
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack">
+      <div class="ticker-item">Plywood</div>
+      <div class="ticker-item">Laminate</div>
+      <div class="ticker-item">Veneer</div>
+      <div class="ticker-item">Louvers</div>
+      <div class="ticker-item">Hardware</div>
+      <div class="ticker-item">Handles</div>
+      <div class="ticker-item">Hinges</div>
+      <div class="ticker-item">Channels</div>
+      <div class="ticker-item">Tower Bolts</div>
+      <div class="ticker-item">Adhesives</div>
+      <div class="ticker-item">Kitchen</div>
+      <div class="ticker-item">Plywood</div>
+      <div class="ticker-item">Laminate</div>
+      <div class="ticker-item">Veneer</div>
+      <div class="ticker-item">Louvers</div>
+      <div class="ticker-item">Hardware</div>
+      <div class="ticker-item">Handles</div>
+      <div class="ticker-item">Hinges</div>
+      <div class="ticker-item">Channels</div>
+      <div class="ticker-item">Tower Bolts</div>
+      <div class="ticker-item">Adhesives</div>
+      <div class="ticker-item">Kitchen</div>
     </div>
-  </section>
+  </div>
 
-  <!-- Brands -->
-  <section class="brands section bg-light">
+  <!-- ── ABOUT ── -->
+  <section class="section bg2">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Trusted Brands</span>
-        <h2>We Stock <span class="highlight">Top Brands</span></h2>
-      </div>
-      <div class="brands-grid">
-        <div class="brand-item">Century Ply</div>
-        <div class="brand-item">Greenply</div>
-        <div class="brand-item">Merino</div>
-        <div class="brand-item">Greenlam</div>
-        <div class="brand-item">Kitply</div>
-        <div class="brand-item">Dekor World</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Customer Reviews</span>
-        <h2>What Our <span class="highlight">Customers Say</span></h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p>"Best plywood shop in the area. Excellent quality products and very helpful staff."</p>
-          <div class="customer">
-            <div class="avatar">RK</div>
-            <div><strong>Ramesh Kumar</strong><span>Interior Designer</span></div>
-          </div>
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <img src="images/about-showroom.jpg" alt="Inside Patel Plywood Showroom" loading="lazy" />
+          <div class="about-badge">Grand Showroom · 2024</div>
         </div>
-        <div class="testimonial-card">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p>"I've been buying from Patel Plywood for 10 years. Always reliable, fair pricing, and quick delivery."</p>
-          <div class="customer">
-            <div class="avatar">SM</div>
-            <div><strong>Suresh Mehta</strong><span>Contractor</span></div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-          <p>"Great variety of laminates and hardware. Got everything I needed for my kitchen renovation in one visit."</p>
-          <div class="customer">
-            <div class="avatar">PJ</div>
-            <div><strong>Priya Joshi</strong><span>Homeowner</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact section bg-light">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Get In Touch</span>
-        <h2>Contact <span class="highlight">Us</span></h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <strong>Address</strong>
-              <p>Shop No. 12, Main Market Road,<br>Industrial Area, Your City – 380001</p>
+        <div class="about-text reveal reveal-d1">
+          <div class="label">About Us</div>
+          <h2 class="h2">A Destination Built<br /><span class="gold">for Builders & Designers</span></h2>
+          <p>Patel Plywood and Hardware is a premium showroom dedicated to bringing the finest materials to interior designers, architects, contractors, and homeowners — all in one beautifully curated space.</p>
+          <p>From ISI-marked plywood and designer laminates to exclusive hardware collections, we pride ourselves on quality that stands the test of time.</p>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat-num">500<span style="color:var(--gold)">+</span></div>
+              <div class="about-stat-label">Products</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">6</div>
+              <div class="about-stat-label">Categories</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">Top</div>
+              <div class="about-stat-label">Brands Only</div>
             </div>
           </div>
-          <div class="info-item">
-            <i class="fas fa-phone-alt"></i>
-            <div>
-              <strong>Phone</strong>
-              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
-              <p><a href="tel:+919876543211">+91 98765 43211</a></p>
-            </div>
+          <div style="margin-top:28px;">
+            <a href="products.html" class="btn btn-outline-gold">View All Products <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <strong>Email</strong>
-              <p><a href="mailto:info@patelplywood.com">info@patelplywood.com</a></p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-clock"></i>
-            <div>
-              <strong>Business Hours</strong>
-              <p>Mon – Sat: 9:00 AM – 8:00 PM</p>
-              <p>Sunday: 10:00 AM – 5:00 PM</p>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCT CATEGORIES ── -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <div class="label">What We Stock</div>
+        <h2 class="h2">Our <span class="gold">Product Range</span></h2>
+        <p>Six carefully curated categories covering every material need for your next interior project.</p>
+      </div>
+    </div>
+    <div class="cat-grid">
+      <a href="products.html?cat=plywood" class="cat-card cat-plywood reveal">
+        <div class="cat-card-bg">
+          <img src="images/products/plywood.jpg" alt="Plywood" loading="lazy" />
+        </div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-body">
+          <div class="cat-card-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="cat-card-title">Plywood</div>
+          <div class="cat-card-desc">BWR, MR & marine grade. ISI-marked, termite-proof options for every application.</div>
+          <div class="cat-card-link">Shop Now <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+      <a href="products.html?cat=laminate" class="cat-card cat-laminate reveal reveal-d1">
+        <div class="cat-card-bg">
+          <img src="images/products/laminate.jpg" alt="Laminate & Sunmica" loading="lazy" />
+        </div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-body">
+          <div class="cat-card-icon"><i class="fas fa-palette"></i></div>
+          <div class="cat-card-title">Laminate & Sunmica</div>
+          <div class="cat-card-desc">500+ shades in matte, gloss, texture & metallic finishes for stunning interiors.</div>
+          <div class="cat-card-link">Shop Now <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+      <a href="products.html?cat=veneer" class="cat-card cat-veneer reveal reveal-d2">
+        <div class="cat-card-bg">
+          <img src="images/products/veneer.jpg" alt="Veneer" loading="lazy" />
+        </div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-body">
+          <div class="cat-card-icon"><i class="fas fa-tree"></i></div>
+          <div class="cat-card-title">Veneer</div>
+          <div class="cat-card-desc">Natural & engineered wood veneers — walnut, teak, oak and more exotic species.</div>
+          <div class="cat-card-link">Shop Now <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+      <a href="products.html?cat=hardware" class="cat-card cat-hardware reveal">
+        <div class="cat-card-bg">
+          <img src="images/products/hardware.jpg" alt="Hardware" loading="lazy" />
+        </div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-body">
+          <div class="cat-card-icon"><i class="fas fa-tools"></i></div>
+          <div class="cat-card-title">Hardware</div>
+          <div class="cat-card-desc">Handles, hinges, channels, tower bolts, screws & more from premium brands.</div>
+          <div class="cat-card-link">Shop Now <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+      <a href="products.html?cat=louvers" class="cat-card cat-louvers reveal reveal-d1">
+        <div class="cat-card-bg">
+          <img src="images/products/louvers.jpg" alt="Louvers & Wall Panels" loading="lazy" />
+        </div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-body">
+          <div class="cat-card-icon"><i class="fas fa-grip-lines-vertical"></i></div>
+          <div class="cat-card-title">Louvers & Wall Panels</div>
+          <div class="cat-card-desc">Fluted panels, slat walls & 3D decorative boards for feature wall designs.</div>
+          <div class="cat-card-link">Shop Now <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+      <a href="products.html?cat=kitchen" class="cat-card cat-kitchen reveal reveal-d2">
+        <div class="cat-card-bg">
+          <img src="images/products/kitchen.jpg" alt="Kitchen" loading="lazy" />
+        </div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-body">
+          <div class="cat-card-icon"><i class="fas fa-utensils"></i></div>
+          <div class="cat-card-title">Kitchen</div>
+          <div class="cat-card-desc">Modular kitchen displays, cabinet accessories and complete kitchen solutions.</div>
+          <div class="cat-card-link">Shop Now <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── WHY CHOOSE US ── -->
+  <section class="section bg2">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <div class="label">Why Patel Plywood</div>
+        <h2 class="h2">The <span class="gold">Difference</span> You'll Feel</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon"><i class="fas fa-medal"></i></div>
+          <div class="why-title">Curated Quality</div>
+          <div class="why-desc">Every product on our floor is hand-selected from certified, top-tier brands — no compromise on standards.</div>
+        </div>
+        <div class="why-card reveal reveal-d1">
+          <div class="why-icon"><i class="fas fa-th-large"></i></div>
+          <div class="why-title">500+ Products</div>
+          <div class="why-desc">The widest range of plywood, laminates, veneers, and hardware in the region — all under one roof.</div>
+        </div>
+        <div class="why-card reveal reveal-d2">
+          <div class="why-icon"><i class="fas fa-comments"></i></div>
+          <div class="why-title">Expert Guidance</div>
+          <div class="why-desc">Our experienced team helps you choose the right material for every application and budget.</div>
+        </div>
+        <div class="why-card reveal reveal-d3">
+          <div class="why-icon"><i class="fas fa-truck"></i></div>
+          <div class="why-title">Reliable Supply</div>
+          <div class="why-desc">Bulk orders, retail purchase, and prompt delivery — serving contractors, designers, and homeowners alike.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY PREVIEW ── -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
+        <div>
+          <div class="label">Our Showroom</div>
+          <h2 class="h2">Step Inside <span class="gold">The Space</span></h2>
+        </div>
+        <a href="gallery.html" class="btn btn-outline-gold">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="gallery-grid">
+        <div class="gal-item reveal" data-src="images/gallery/g1.jpg">
+          <img src="images/gallery/g1.jpg" alt="Showroom entrance" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gal-item reveal reveal-d1" data-src="images/gallery/g2.jpg">
+          <img src="images/gallery/g2.jpg" alt="Kitchen display" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gal-item reveal reveal-d2" data-src="images/gallery/g3.jpg">
+          <img src="images/gallery/g3.jpg" alt="Hardware wall" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gal-item reveal" data-src="images/gallery/g4.jpg">
+          <img src="images/gallery/g4.jpg" alt="Laminate display" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gal-item reveal reveal-d1" data-src="images/gallery/g5.jpg">
+          <img src="images/gallery/g5.jpg" alt="Veneer corridor" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BRANDS ── -->
+  <div class="brands bg2">
+    <div class="brands-track" id="brandsTrack">
+      <div class="brand-item">Century Ply</div>
+      <div class="brand-item">Greenply</div>
+      <div class="brand-item">Merino</div>
+      <div class="brand-item">Greenlam</div>
+      <div class="brand-item">Kitply</div>
+      <div class="brand-item">Hettich</div>
+      <div class="brand-item">Hafele</div>
+      <div class="brand-item">Ebco</div>
+      <div class="brand-item">Fevicol</div>
+      <div class="brand-item">Pidilite</div>
+      <div class="brand-item">Dekor World</div>
+      <div class="brand-item">Century Ply</div>
+      <div class="brand-item">Greenply</div>
+      <div class="brand-item">Merino</div>
+      <div class="brand-item">Greenlam</div>
+      <div class="brand-item">Kitply</div>
+      <div class="brand-item">Hettich</div>
+      <div class="brand-item">Hafele</div>
+      <div class="brand-item">Ebco</div>
+      <div class="brand-item">Fevicol</div>
+      <div class="brand-item">Pidilite</div>
+      <div class="brand-item">Dekor World</div>
+    </div>
+  </div>
+
+  <!-- ── CTA BANNER ── -->
+  <section class="cta-banner">
+    <div class="cta-banner-body reveal">
+      <div class="label" style="justify-content:center;">Get In Touch</div>
+      <h2 class="h2">Ready to Start<br /><span class="gold">Your Project?</span></h2>
+      <p>Visit our showroom or send us a message — our team is here to help you find exactly what you need.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-gold">Contact Us <i class="fas fa-arrow-right"></i></a>
+        <a href="tel:+919876543210" class="btn btn-outline"><i class="fas fa-phone-alt"></i> +91 98765 43210</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Patel Plywood<small>& Hardware</small></div>
+          <p>Your premium destination for plywood, laminate, veneer, louvers, and hardware — everything for your dream interior, in one place.</p>
+          <div class="footer-social">
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
-
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <input type="text" id="name" placeholder="Your Name" required />
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" placeholder="Your Email" required />
-          </div>
-          <div class="form-group">
-            <input type="tel" id="phone" placeholder="Phone Number" />
-          </div>
-          <div class="form-group">
-            <select id="interest">
-              <option value="">What are you looking for?</option>
-              <option value="plywood">Plywood</option>
-              <option value="laminate">Laminates</option>
-              <option value="hardware">Hardware</option>
-              <option value="doors">Doors</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <textarea id="message" rows="4" placeholder="Your Message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
-          <div id="formMsg" class="form-msg"></div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="logo">
-          <span class="logo-icon"><i class="fas fa-hammer"></i></span>
-          <span>Patel <strong>Plywood</strong></span>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <p>Your one-stop destination for all plywood, laminate, and hardware needs. Quality you can trust.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-products">
-        <h4>Our Products</h4>
-        <ul>
-          <li><a href="#products">Commercial Plywood</a></li>
-          <li><a href="#products">Marine Plywood</a></li>
-          <li><a href="#products">Decorative Laminates</a></li>
-          <li><a href="#products">Cabinet Hardware</a></li>
-          <li><a href="#products">Flush Doors</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h4>Contact</h4>
-        <p><i class="fas fa-map-marker-alt"></i> Shop No. 12, Main Market Road, Industrial Area</p>
-        <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
-        <p><i class="fas fa-envelope"></i> info@patelplywood.com</p>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html?cat=plywood">Plywood</a></li>
+            <li><a href="products.html?cat=laminate">Laminate & Sunmica</a></li>
+            <li><a href="products.html?cat=veneer">Veneer</a></li>
+            <li><a href="products.html?cat=hardware">Hardware</a></li>
+            <li><a href="products.html?cat=louvers">Louvers & Panels</a></li>
+            <li><a href="products.html?cat=kitchen">Kitchen</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Shop No. 1 & 2, Patel Complex,<br />Station Road, Pune – 411001</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span><a href="tel:+919876543210">+91 98765 43210</a></span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Mon – Sat: 9 AM – 8 PM<br />Sunday: 10 AM – 5 PM</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Patel Plywood &amp; Hardware. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2024 Patel Plywood & Hardware. All rights reserved.</span>
+        <span>GSTIN: 27CYDPP9591G1ZS</span>
+      </div>
     </div>
   </footer>
 
-  <!-- Back to Top -->
-  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <button id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
 
-  <script src="js/script.js"></script>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lbClose">&times;</span>
+    <button class="lightbox-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+    <img class="lightbox-img" id="lbImg" src="" alt="" />
+    <button class="lightbox-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

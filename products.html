@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — Patel Plywood & Hardware</title>
+  <meta name="description" content="Browse our full range of plywood, laminate, veneer, louvers, hardware and kitchen products." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="nav" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Patel Plywood<span>& Hardware</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold nav-cta">Visit Showroom</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="label">Our Collection</div>
+      <h1 class="h2">All <span class="gold">Products</span></h1>
+      <p>Everything from structural plywood to decorative hardware — curated for quality and variety.</p>
+    </div>
+  </div>
+
+  <!-- ── PRODUCTS ── -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="plywood">Plywood</button>
+        <button class="filter-btn" data-filter="laminate">Laminate & Sunmica</button>
+        <button class="filter-btn" data-filter="veneer">Veneer</button>
+        <button class="filter-btn" data-filter="hardware">Hardware</button>
+        <button class="filter-btn" data-filter="louvers">Louvers & Panels</button>
+        <button class="filter-btn" data-filter="adhesive">Adhesives</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- PLYWOOD -->
+        <div class="product-card reveal" data-cat="plywood">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#2a1a08,#140e04)">
+            <img src="images/products/plywood-commercial.jpg" alt="Commercial Plywood" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Plywood</span>
+            <div class="product-card-title">Commercial Plywood (MR)</div>
+            <p class="product-card-desc">Moisture resistant grade plywood for interior furniture, wardrobes, and cabinets.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="plywood">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#2a1a08,#140e04)">
+            <img src="images/products/plywood-bwr.jpg" alt="BWR Plywood" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Plywood</span>
+            <div class="product-card-title">BWR Plywood</div>
+            <p class="product-card-desc">Boiling water resistant grade — ideal for kitchens, bathrooms, and high-moisture areas.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="plywood">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#2a1a08,#140e04)">
+            <img src="images/products/plywood-marine.jpg" alt="Marine Plywood" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Plywood</span>
+            <div class="product-card-title">Marine Plywood</div>
+            <p class="product-card-desc">Premium waterproof plywood for demanding applications and outdoor use.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="plywood">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#2a1a08,#140e04)">
+            <img src="images/products/plywood-fire.jpg" alt="Fire Retardant Plywood" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Plywood</span>
+            <div class="product-card-title">Fire Retardant Plywood</div>
+            <p class="product-card-desc">ISI-certified fire retardant boards for commercial buildings and compliance projects.</p>
+          </div>
+        </div>
+
+        <!-- LAMINATE -->
+        <div class="product-card reveal" data-cat="laminate">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0a1420,#050e17)">
+            <img src="images/products/laminate-hpl.jpg" alt="HPL Laminate" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Laminate</span>
+            <div class="product-card-title">HPL Laminate</div>
+            <p class="product-card-desc">High pressure laminates in 500+ shades — matte, gloss, wood grain, and stone finishes.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="laminate">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0a1420,#050e17)">
+            <img src="images/products/laminate-sunmica.jpg" alt="Sunmica" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Laminate</span>
+            <div class="product-card-title">Sunmica / Decorative Laminate</div>
+            <p class="product-card-desc">Classic and designer sunmica sheets with premium texture and colour fastness.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="laminate">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0a1420,#050e17)">
+            <img src="images/products/laminate-metallic.jpg" alt="Metallic Laminate" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Laminate</span>
+            <div class="product-card-title">Metallic & Designer Laminate</div>
+            <p class="product-card-desc">Geometric patterns, rose gold inlays, and metallic finish laminates for accent panels.</p>
+          </div>
+        </div>
+
+        <!-- VENEER -->
+        <div class="product-card reveal" data-cat="veneer">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#1f120a,#100804)">
+            <img src="images/products/veneer-natural.jpg" alt="Natural Veneer" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Veneer</span>
+            <div class="product-card-title">Natural Wood Veneer</div>
+            <p class="product-card-desc">Teak, walnut, oak, wenge and more — real wood veneers for premium furniture finishes.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="veneer">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#1f120a,#100804)">
+            <img src="images/products/veneer-engineered.jpg" alt="Engineered Veneer" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Veneer</span>
+            <div class="product-card-title">Engineered Veneer</div>
+            <p class="product-card-desc">Consistent grain and colour, eco-friendly engineered veneers for contemporary spaces.</p>
+          </div>
+        </div>
+
+        <!-- HARDWARE -->
+        <div class="product-card reveal" data-cat="hardware">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0f1318,#080b0e)">
+            <img src="images/products/hardware-handles.jpg" alt="Cabinet Handles" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Hardware</span>
+            <div class="product-card-title">Cabinet Handles & Pulls</div>
+            <p class="product-card-desc">Gold, black, rose gold, chrome and stainless finishes — 300+ handle designs in stock.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="hardware">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0f1318,#080b0e)">
+            <img src="images/products/hardware-door-handles.jpg" alt="Door Handles" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Hardware</span>
+            <div class="product-card-title">Door Lever Handles</div>
+            <p class="product-card-desc">Premium door handles in all finishes — gold, black, rose gold, chrome, and white.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="hardware">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0f1318,#080b0e)">
+            <img src="images/products/hardware-hinges.jpg" alt="Hinges" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Hardware</span>
+            <div class="product-card-title">Hinges</div>
+            <p class="product-card-desc">Concealed, soft-close, hydraulic and standard hinges for all cabinet and door types.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="hardware">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0f1318,#080b0e)">
+            <img src="images/products/hardware-channels.jpg" alt="Drawer Channels" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Hardware</span>
+            <div class="product-card-title">Drawer Channels</div>
+            <p class="product-card-desc">Soft-close and push-to-open drawer channels in all sizes for smooth operation.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="hardware">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0f1318,#080b0e)">
+            <img src="images/products/hardware-tower-bolts.jpg" alt="Tower Bolts" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Hardware</span>
+            <div class="product-card-title">Tower Bolts & Latches</div>
+            <p class="product-card-desc">Stainless steel, brass, and black finish tower bolts and security latches.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="hardware">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0f1318,#080b0e)">
+            <img src="images/products/hardware-screws.jpg" alt="Screws & Fasteners" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Hardware</span>
+            <div class="product-card-title">Screws & Fasteners</div>
+            <p class="product-card-desc">Full range of wood screws, chipboard screws, dowels, and connector bolts.</p>
+          </div>
+        </div>
+
+        <!-- LOUVERS -->
+        <div class="product-card reveal" data-cat="louvers">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0d0f10,#060708)">
+            <img src="images/products/louvers-fluted.jpg" alt="Fluted Panels" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Louvers</span>
+            <div class="product-card-title">Fluted Wall Panels</div>
+            <p class="product-card-desc">Vertical slat fluted panels in wood, PVC and WPC for feature walls and TV units.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="louvers">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0d0f10,#060708)">
+            <img src="images/products/louvers-3d.jpg" alt="3D Wall Panels" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Louvers</span>
+            <div class="product-card-title">3D Decorative Panels</div>
+            <p class="product-card-desc">Textured 3D wall boards in metallic, wood, and abstract designs for accent walls.</p>
+          </div>
+        </div>
+
+        <!-- ADHESIVE -->
+        <div class="product-card reveal" data-cat="adhesive">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#141010,#0a0808)">
+            <img src="images/products/adhesive-fevicol.jpg" alt="Fevicol" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Adhesive</span>
+            <div class="product-card-title">Fevicol SH & Marine</div>
+            <p class="product-card-desc">India's most trusted wood adhesive — white glue, marine grade, and SR variants.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="adhesive">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#141010,#0a0808)">
+            <img src="images/products/adhesive-contact.jpg" alt="Contact Adhesive" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Adhesive</span>
+            <div class="product-card-title">Contact Adhesive</div>
+            <p class="product-card-desc">Neoprene-based contact cement for laminates, veneers, and surface bonding applications.</p>
+          </div>
+        </div>
+
+        <!-- KITCHEN -->
+        <div class="product-card reveal" data-cat="kitchen">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0b1410,#060d09)">
+            <img src="images/products/kitchen-modular.jpg" alt="Modular Kitchen" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Kitchen</span>
+            <div class="product-card-title">Modular Kitchen Display</div>
+            <p class="product-card-desc">Live kitchen displays showcasing full modular kitchen setups with premium finishes.</p>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="kitchen">
+          <div class="product-card-img" style="background:linear-gradient(145deg,#0b1410,#060d09)">
+            <img src="images/products/kitchen-accessories.jpg" alt="Kitchen Accessories" loading="lazy" />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Kitchen</span>
+            <div class="product-card-title">Kitchen Accessories</div>
+            <p class="product-card-desc">Pull-outs, magic corners, tandem boxes, and interior fittings for organised kitchens.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-banner">
+    <div class="cta-banner-body reveal">
+      <div class="label" style="justify-content:center;">Talk to Us</div>
+      <h2 class="h2">Need Help Choosing<br /><span class="gold">the Right Material?</span></h2>
+      <p>Our experts are happy to guide you through selection, pricing, and availability.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-gold">Get in Touch <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Patel Plywood<small>& Hardware</small></div>
+          <p>Your premium destination for plywood, laminate, veneer, louvers, and hardware — everything for your dream interior, in one place.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html?cat=plywood">Plywood</a></li>
+            <li><a href="products.html?cat=laminate">Laminate & Sunmica</a></li>
+            <li><a href="products.html?cat=veneer">Veneer</a></li>
+            <li><a href="products.html?cat=hardware">Hardware</a></li>
+            <li><a href="products.html?cat=louvers">Louvers & Panels</a></li>
+            <li><a href="products.html?cat=kitchen">Kitchen</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Shop No. 1 & 2, Patel Complex,<br />Station Road, Pune – 411001</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span><a href="tel:+919876543210">+91 98765 43210</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2024 Patel Plywood & Hardware. All rights reserved.</span>
+        <span>GSTIN: 27CYDPP9591G1ZS</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>
