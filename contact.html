@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Patel Plywood & Hardware</title>
+  <meta name="description" content="Visit our showroom or send us a message. We'd love to help with your project." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="nav" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Patel Plywood<span>& Hardware</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="tel:+919876543210" class="btn btn-gold nav-cta"><i class="fas fa-phone-alt"></i> Call Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="label">Get In Touch</div>
+      <h1 class="h2">Visit or <span class="gold">Contact Us</span></h1>
+      <p>Whether you're a homeowner, designer, or contractor — we're here to help you find the right material.</p>
+    </div>
+  </div>
+
+  <!-- ── CONTACT SECTION ── -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-info-body">
+              <strong>Showroom Address</strong>
+              <p>Shop No. 1 & 2, Patel Complex,<br />Station Road, Pune – 411001,<br />Maharashtra, India</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-info-body">
+              <strong>Phone</strong>
+              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+              <p><a href="tel:+919876543211">+91 98765 43211</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-info-body">
+              <strong>Email</strong>
+              <p><a href="mailto:info@patelplywood.com">info@patelplywood.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-info-body">
+              <strong>Business Hours</strong>
+              <div class="contact-hours">
+                <span>Mon – Sat</span><span>9:00 AM – 8:00 PM</span>
+                <span>Sunday</span><span>10:00 AM – 5:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-receipt"></i></div>
+            <div class="contact-info-body">
+              <strong>GST Number</strong>
+              <p>27CYDPP9591G1ZS</p>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div style="display:flex;gap:12px;padding-top:8px;">
+            <a href="#" class="btn btn-outline-gold" style="padding:10px 18px;font-size:.82rem;">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="#" class="btn btn-outline-gold" style="padding:10px 18px;font-size:.82rem;">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal reveal-d1">
+          <h3 class="h3">Send a Message</h3>
+          <p>Fill in your details and we'll get back to you within 24 hours.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Rahul" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Sharma" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+91 98765 43210" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="rahul@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="interest">I'm Looking For</label>
+              <select id="interest">
+                <option value="">Select a category...</option>
+                <option value="plywood">Plywood</option>
+                <option value="laminate">Laminate / Sunmica</option>
+                <option value="veneer">Veneer</option>
+                <option value="hardware">Hardware (Handles, Hinges, etc.)</option>
+                <option value="louvers">Louvers & Wall Panels</option>
+                <option value="adhesive">Adhesives</option>
+                <option value="kitchen">Kitchen Accessories</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Tell us about your project or what you need..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;padding:15px;">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-msg" id="formMsg"></div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Map -->
+      <div class="map-wrap reveal" style="margin-top:64px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.5!2d73.8567!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMxJzEzLjQiTiA3M8KwNTEnMjQuMSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Patel Plywood Location">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Patel Plywood<small>& Hardware</small></div>
+          <p>Your premium destination for plywood, laminate, veneer, louvers, and hardware — everything for your dream interior, in one place.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html?cat=plywood">Plywood</a></li>
+            <li><a href="products.html?cat=laminate">Laminate & Sunmica</a></li>
+            <li><a href="products.html?cat=veneer">Veneer</a></li>
+            <li><a href="products.html?cat=hardware">Hardware</a></li>
+            <li><a href="products.html?cat=louvers">Louvers & Panels</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Shop No. 1 & 2, Patel Complex,<br />Station Road, Pune – 411001</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span><a href="tel:+919876543210">+91 98765 43210</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2024 Patel Plywood & Hardware. All rights reserved.</span>
+        <span>GSTIN: 27CYDPP9591G1ZS</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>
