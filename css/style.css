@@ -206,6 +206,29 @@ input,select,textarea { font-family:inherit; }
 }
 .about-stat-label { font-size:.72rem; color:var(--sub); letter-spacing:.06em; text-transform:uppercase; }
 
+/* ── ABOUT EXTRAS ────────────────────────── */
+.about-cats {
+  display:flex; flex-wrap:wrap; gap:9px; margin:20px 0;
+}
+.about-cats span {
+  display:inline-flex; align-items:center; gap:7px;
+  padding:7px 14px; border-radius:3px;
+  background:var(--gold-dim); border:1px solid var(--gold-border);
+  font-size:.78rem; font-weight:500; color:var(--text);
+}
+.about-cats span i { color:var(--gold); font-size:.75rem; }
+
+.about-services {
+  display:flex; flex-direction:column; gap:11px;
+  margin:22px 0; list-style:none;
+}
+.about-services li {
+  display:flex; align-items:flex-start; gap:11px;
+  font-size:.9rem; color:rgba(238,234,226,.78); line-height:1.55;
+}
+.about-services li i { color:var(--gold); font-size:.85rem; margin-top:2px; flex-shrink:0; }
+.about-services li strong { color:var(--text); }
+
 /* ── PRODUCTS GRID (homepage) ────────────── */
 .cat-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
 .cat-card {
