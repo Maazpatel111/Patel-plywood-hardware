@@ -47,31 +47,43 @@ if (revealEls.length) {
 // ── PRODUCT / GALLERY FILTER ─────────────────
 const filterBar = document.getElementById('filterBar');
 if (filterBar) {
-  const btns  = filterBar.querySelectorAll('.filter-btn');
+  const btns  = filterBar.querySelectorAll('[data-filter]');
   const grid  = document.getElementById('productsGrid') || document.getElementById('galleryGrid');
-  const cards = grid ? grid.querySelectorAll('[data-cat]') : [];
+  const cards = grid ? Array.from(grid.querySelectorAll('[data-cat]')) : [];
+  const countEl = document.getElementById('productCount');
+
+  function updateCount() {
+    if (!countEl) return;
+    const n = cards.filter(c => !c.classList.contains('hidden')).length;
+    countEl.innerHTML = `<strong>${n}</strong> Product${n !== 1 ? 's' : ''}`;
+  }
+
+  function applyFilter(f) {
+    btns.forEach(b => b.classList.toggle('active', b.dataset.filter === f));
+    cards.forEach(c => c.classList.toggle('hidden', f !== 'all' && c.dataset.cat !== f));
+    updateCount();
+  }
 
   // Read ?cat= from URL and auto-activate on products page
   const urlCat = new URLSearchParams(window.location.search).get('cat');
-  if (urlCat) {
-    btns.forEach(b => {
-      b.classList.toggle('active', b.dataset.filter === urlCat);
-    });
-    cards.forEach(c => {
-      c.classList.toggle('hidden', c.dataset.cat !== urlCat);
+  if (urlCat) applyFilter(urlCat);
+
+  btns.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.filter)));
+
+  // Sort select
+  const sortSel = document.getElementById('sortSelect');
+  if (sortSel) {
+    sortSel.addEventListener('change', () => {
+      if (!grid || sortSel.value !== 'az') return;
+      const visible = cards.filter(c => !c.classList.contains('hidden'));
+      visible.sort((a, b) => {
+        const ta = a.querySelector('.product-card-title')?.textContent || '';
+        const tb = b.querySelector('.product-card-title')?.textContent || '';
+        return ta.localeCompare(tb);
+      });
+      visible.forEach(c => grid.appendChild(c));
     });
   }
-
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      btns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const f = btn.dataset.filter;
-      cards.forEach(c => {
-        c.classList.toggle('hidden', f !== 'all' && c.dataset.cat !== f);
-      });
-    });
-  });
 }
 
 // ── LIGHTBOX ────────────────────────────────
